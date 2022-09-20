@@ -1,0 +1,11 @@
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+    local items = v.Backpack
+    if items:FindFirstChild("Knife") then
+        print(v.Name .. " Is the murder")
+    else if items:FindFirstChild("Gun") then
+        print(v.Name .. " Is the sheriff")
+    else
+        print(v.Name .. " Is innocent")
+    end
+    end
+end
